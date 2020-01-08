@@ -1,0 +1,93 @@
+body{
+    background: url("../img/bgcards/bg4.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+ 
+header h1{
+	text-align:center;
+	font-size: 2.5em;
+	color: white;
+}
+.containerr{
+	position: relative;
+	width: 95%;
+	margin: 50px auto 0;
+	height: auto;
+	display: grid;
+	grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+	grid-template-rows: auto 1fr auto;
+	grid-gap: 20px;
+}
+.containerr .card{
+	position: relative;
+	width: 300px;
+	height: 340px;
+	background-color: transparent;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.containerr .card:hover{
+	transform: translateY(-10px);
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+.containerr .card .imgs{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.5;
+	
+}
+.containerr .card:hover .imgs{
+	opacity: 1;
+}
+.containerr .card .imgs img{
+	width:100%;
+}
+.containerr .card .content{
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	bottom: -100%;
+	padding: 20px;
+	padding-top: 60px;
+	box-sizing: border-box;
+	text-align: center;
+	transition: 0.5s;
+}
+.containerr .card:hover .content{
+	bottom: 0;
+}
+.containerr .card .content h2{
+	margin: 0 0 10px;
+	padding: 0;
+	color: #fff;
+	font-size: 20px;
+	
+}
+.containerr .card .content p{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 16px;
+	
+}
+.containerr .card .content p a{
+	text-decoration: none;
+}
+.containerr .card .content ul{
+	display: flex;
+	margin: 20px 0 0;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+}
+.containerr .card .content ul li{
+	list-style: none;
+}
+.containerr .card .content ul li a{
+	color: #fff;
+	padding: 0 10px;
+	font-size: 18px;
+}
