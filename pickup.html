@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Pick up</title>
+        <link rel="stylesheet" href="css/pick.css">
+    </head>
+    <body>
+        <div class="box">
+        <h2>Pickup</h2>
+        <form action="pickinsert.php" method="post">
+               <div class ="inputBox">	
+            	    <input type="text" name="name" placeholder="" required="" />
+            	   	 <label>Your name</label>	
+				</div>
+                <div class ="inputBox">
+            	    <input type="email" name="gmail" placeholder="" required="" />
+            	   	 <label>Your Mailid</label>
+				</div>
+				<div class ="inputBox">
+					<input type="tel" name="phnnum" placeholder=""  required="" />
+					<label>Phone number</label>
+                </div>
+                <div class="inputBox">
+						<select name="cfe_ty">
+							<option>Select Coffee</option>
+							<option value="ESPRESSO">ESPRESSO </option>
+							<option value="Double Espresso">Double Espresso</option>
+							<option value="Short Macchiato">Short Macchiato</option>
+							<option value="Long Macchiato">Long Macchiato</option>
+							<option value="Ristretto">Ristretto</option>
+							<option value="Long Black">Long Black</option>
+							<option value="Cafe Latte">Cafe Latte </option>
+							<option value="Cappuccino">Cappuccino</option>
+							<option value="Flat White">Flat White</option>
+							<option value="Piccolo Latte">Piccolo Latte</option>
+							<option value="Mocha">Mocha</option>
+							<option value="Affogato">Affogato</option>
+						</select>
+				</div>
+                <div class="inputBox">
+                    <input type="number" name="qnty" placeholder="" required=""/ >
+                    <label> Quantity </label>
+                </div>
+                				<div class ="inputBox">
+      				 <input type="submit" value="order" class="agileinfo" />
+				</div>
+        </form>
+        <a href="order.html"><button>To Delivery</button></a>
+            <br/><br/>
+        <a href="home.html"><button >  Back to Home </button></a>
+    </div>
+ </body>
+</html>
